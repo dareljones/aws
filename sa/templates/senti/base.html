@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+    <style media="screen" type="text/css">
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('select').material_select();
+        });
+    </script>{% block header %}{% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <title>Data Science Hub</title>
+    <link href="{% static "sa/asset/css/bootstrap.min.css" %}" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="{% static "sa/css/font-awesome.min.css" %}" rel="stylesheet">
+
+
+    <!-- Animate CSS -->
+
+    <link href="{% static "sa/css/animate.css" %}" rel="stylesheet" >
+
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="{% static "sa/css/owl.carousel.css" %}">
+    <link rel="stylesheet" href="{% static "sa/css/owl.theme.css" %}">
+    <link rel="stylesheet" href="{% static "sa/css/owl.transitions.css" %}">
+
+    <!-- Custom CSS <link href="css/style.css" rel="stylesheet">-->
+     <link href="{% static "sa/css/style.css" %}" rel="stylesheet">
+
+    <link href="{% static "sa/css/responsive.css" %}" rel="stylesheet">
+
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static "sa/css/color/green.css" %}">
+
+
+
+
+    <!-- Colors CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static "sa/css/color/green.css" %}" title="green">
+    <link rel="stylesheet" type="text/css" href="{% static "sa/css/color/light-red.css" %}" title="light-red">
+    <link rel="stylesheet" type="text/css" href="{% static "sa/css/color/blue.css" %}" title="blue">
+    <link rel="stylesheet" type="text/css" href="{% static "sa/css/color/light-blue.css" %}" title="light-blue">
+    <link rel="stylesheet" type="text/css" href="{% static "sa/css/color/yellow.css" %}" title="yellow">
+    <link rel="stylesheet" type="text/css" href="{% static "sa/css/color/light-green.css" %}" title="light-green">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+
+    <!-- Modernizer js -->
+    <script src="{% static "sa/js/modernizr.custom.js" %}"></script>
+
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header>
+
+     <div class="colors-switcher">
+            <a id="show-panel" class="hide-panel"><i class="fa fa-tint"></i></a>
+                <ul class="colors-list">
+                    <li><a title="Light Red" onClick="setActiveStyleSheet('light-red'); return false;" class="light-red"></a></li>
+                    <li><a title="Blue" class="blue" onClick="setActiveStyleSheet('blue'); return false;"></a></li>
+                    <li class="no-margin"><a title="Light Blue" onClick="setActiveStyleSheet('light-blue'); return false;" class="light-blue"></a></li>
+                    <li><a title="Green" class="green" onClick="setActiveStyleSheet('green'); return false;"></a></li>
+
+                    <li class="no-margin"><a title="light-green" class="light-green" onClick="setActiveStyleSheet('light-green'); return false;"></a></li>
+                    <li><a title="Yellow" class="yellow" onClick="setActiveStyleSheet('yellow'); return false;"></a></li>
+
+                </ul>
+
+        </div>
+
+
+<nav class="navbar navbar-default black navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="..">Data Science Hub</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="..#feature">Features</a>
+                    </li>
+
+
+                    <li>
+                        <a class="page-scroll" href="..#latest-news">News</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="..#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <nav>
+</header>
+<main>
+    <br>
+    {% block body %}{% endblock %}
+</main><br/><br/><br/>
+<center><script>
+var idcomments_acct = 'e99fc82a1267853aaeee4dc5095d4aca';
+var idcomments_post_id;
+var idcomments_post_url;
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+<br/>
+    <br/>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2&appId=162796480455884&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="fb-comments" data-href="http://dhub.com" data-width="1000" data-numposts="5"></div>
+</center>
+<footer class="page-footer black lighten-2" style="!important;padding-top: 0">
+    <div class="footer-copyright">
+        <div class="container">
+            <a class="grey-text text-lighten-4 right" href="#!"></a></div>
+    </div>
+</footer>
+
+
+
+
+    <!-- jQuery Version 2.1.1 -->
+    <script src="{% static "sa/js/jquery-2.1.1.min.js"%}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "sa/asset/js/bootstrap.min.js" %}"></script>
+
+    <!-- Plugin JavaScript -->
+
+         <script src="{% static "sa/js/jquery.easing.1.3.js" %}"></script>
+          <script src="{% static "sa/js/classie.js" %}"></script>
+         <script src="{% static "sa/js/jquery.appear.js" %}"></script>
+          <script src="{% static "sa/js/cbpAnimatedHeader.js" %}"></script>
+         <script src="{% static "sa/js/owl.carousel.min.js" %}"></script>
+                  <script src="{% static "sa/js/jquery.fitvids.js" %}"></script>
+
+                 <script src="{% static "sa/js/styleswitcher.js" %}"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'senti/base.html' %}
+{% block body %}
+<br/>
+<br/>
+<br/>
+    <div class="row">
+        <div id="input_hastag" >
+            <form method="get" action="{% url 'analyse' %} ">
+                <div class="input-field col s3 m3 l0 offset-s2 offset-m2 offset-l5 row l2">
+                    <label for="{{ input_hastag.q.id_for_label }}">Input Hashtag:</label>
+                       {{ input_hastag.q }}
+
+                <br/>
+                <button class="btn waves-effect waves-light" type="submit">Analyse
+                    <i class="material-icons right">send</i>
+                </button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
